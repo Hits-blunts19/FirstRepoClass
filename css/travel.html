@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Tutorial</title>
+    <script src="https://kit.fontawesome.com/d3c96e30db.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="travel.html" class="site-brand">
+                Supa<span>Airs</span>
+            </a>
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="travel.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="theme-toggle-btn">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>Leave Your Footprints</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eum praesentium similique odio ad earum illum aliquid ut dolores nostrum. Vero delectus, alias qui quisquam voluptatibus temporibus explicabo corrupti atque?</p>
+            </div>
+            <div class="header-form">
+                <h2>Choose Your Travel Location</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Destination name">
+                    <input type="date" class="form-control" placeholder="Date">
+                    <input type="number" class="form-control" placeholder="price ($)">
+                    <input type="submit" class="btn" value="search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- featured section -->
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Know about some places before your travel</span>
+                <h2 class="lg-title">Featured Places</h2>
+            </div>
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/brazil1.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Reo De Janeiro, Brazil
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/eiffel3.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Eiffel Tower, Paris
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/maimi.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Miami
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/india3.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Jaipur, India
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/170606120957-california---travel-destination---shutterstock-220315747.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            California
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/cuba1.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Cuba
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/0973b258-3b11-46ac-a454-c9038ebbdafc.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Los Angeles
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/image.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Japan
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/Uluru-from-above-MS.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Australia
+                        </span>
+                        <div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo vel sequi aliquam porro esse voluptates recusandae ab. Facilis alias officia molestias quae distinctio ducimus doloremque sit in earum nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of feature section -->
+
+    <!-- service section -->
+    <section id="services" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+               <span class="sm-title">Know about the services we offer</span>
+               <h2 class="lg-title">Our Services</h2>
+            </div>
+            <div class="service-row">
+                <div class="service-item">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-hotel"></i>
+                    </span>
+                    <h3>Luxurious Hotels</h3>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur hic qui quas dolores deserunt nobis molestias dolorum pariatur sequi nesciunt ullam quidem ut maxime maiores eius, culpa iure voluptas?</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="service-item">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </span>
+                    <h3>Travel Guide</h3>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur hic qui quas dolores deserunt nobis molestias dolorum pariatur sequi nesciunt ullam quidem ut maxime maiores eius, culpa iure voluptas?</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="service-item">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-money-bill"></i>
+                    </span>
+                    <h3>Suitable Price</h3>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur hic qui quas dolores deserunt nobis molestias dolorum pariatur sequi nesciunt ullam quidem ut maxime maiores eius, culpa iure voluptas?</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of service section -->
+
+    <!-- testimonial section -->
+    <section id="testimonial" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">What our clients say about us</span>
+                <h2 class="lg-title">Testimonials</h2>
+            </div>
+            <div class="test-row">
+                <div class="test-item">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium voluptatem ad voluptatibus impedit, ipsum necessitatibus velit quibusdam earum delectus accusantium exercitationem corporis.</p>
+                    <div class="test-item-info">
+                        <img src="../img/test5.jpg" alt="testimonial">
+                    </div>
+                    <div>
+                        <h3>Kelvin wild</h3>
+                        <p>Trip to France</p>
+                    </div>
+                </div>
+                <div class="test-item">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident ducimus similique natus molestias, nesciunt est laudantium culpa fugiat id officia, sapiente libero vero, quisquam doloremque ullam!</p>
+                    <div class="test-item-info">
+                        <img src="../img/test6.jpg" alt="testimonial">
+                    </div>
+                    <div>
+                        <h3>James King</h3>
+                        <p>Trip to Guinea</p>
+                    </div>
+                </div>
+                <div class="test-item">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati harum eveniet consequuntur itaque est officiis tenetur suscipit tempora! A, quaerat non. Tempore, mollitia suscipit.</p>
+                    <div class="test-item-info">
+                        <img src="../img/test4.jpg" alt="testimonial">
+                    </div>
+                    <div>
+                        <h3>Mia Jones</h3>
+                        <p>Trip to Paris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of testimonial section -->
+
+    <!-- video section -->
+    <section id="video">
+        <div class="video-wrapper flex">
+            <video loop>
+                <source src="../img/travel-ad.mp4" type="video/mp4">
+            </video>
+            <button type="button" id="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </section>
+    <!-- end of video section -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="travel.html" class="site-brand">
+                    Supa<span>Airs</span>
+                </a>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem ducimus veritatis nobis? Provident dolore debitis eligendi, quod beatae aut perspiciatis dicta culpa impedit!</p>
+            </div>
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places</h2>
+                <ul>
+                    <li><a href="#"></a>Boston</li>
+                    <li><a href="#"></a>South Africa</li>
+                    <li><a href="#"></a>Las Angeles</li>
+                    <li><a href="#"></a>Las Vagas</li>
+                    <li><a href="#"></a>Chicago</li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+
+    <script src="travel.js"></script>
+    <script>
+        // play/pause video
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn').addEventListener('click', () =>{
+            if(video.paused){
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Tutorial</title>
+    <script src="https://kit.fontawesome.com/d3c96e30db.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="travel.html" class="site-brand">
+                Supa<span>Airs</span>
+            </a>
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="travel.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="theme-toggle-btn">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>Gallery</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eum praesentium similique odio ad earum illum aliquid ut dolores nostrum. Vero delectus, alias qui quisquam voluptatibus temporibus explicabo corrupti atque?</p>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- gallery section -->
+    <div id="gallery" class="py-4">
+        <div class="container">
+            <div class="gallery-row">
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/dubai.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/egypt.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/germany.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/italy.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/jamaica.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/lasvagas.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/mountain.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/southkorea.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="../img/sites/washington.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of gallery section -->
+
+    <!-- img model -->
+    <div id="img-model-box">
+        <div id="img-model">
+            <button type="button" id="model-close-btn" class="flex">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button type="button" id="prev-btn" class="flex">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button type="button" id="next-btn" class="flex">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <img src="../img/sites/dubai.jpg">
+        </div>
+    </div>
+    <!-- end img model -->
+
+    <!-- popular places section -->
+    <section id="popular" class="py-4">
+        <div class="title-wrap">
+            <span class="sm-title">Know about some cool destinations</span>
+            <h2 class="lg-title">Popular Places</h2>
+        </div>
+
+        <div class="popular-row">
+            <div class="popular-item shadow">
+                <img src="../img/popular/tower1.jpg" alt="">
+                <div>
+                    <span>Eiffel Tower, Paris</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/palace1.jpg" alt="">
+                <div>
+                    <span>Buckingham Palace, Uk</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/burjkhalifa.jpg" alt="">
+                <div>
+                    <span>Burj Khalifa, Dubai</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/niagra2.jpg" alt="">
+                <div>
+                    <span>Niagra Falls, Canada</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/opera1.jpg" alt="">
+                <div>
+                    <span>Sydney Opera House, Australia</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/lagoon2.jpg" alt="">
+                <div>
+                    <span>Blue Lagoon, Iceland</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/sphinx.jpg" alt="">
+                <div>
+                    <span>Great Sphinx, Egypt</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="../img/popular/fuji2.jpg" alt="">
+                <div>
+                    <span>Mount Fuji, Japan</span>
+                    <ul class="rating flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                        <li>&nbsp;400 reviews</li>
+                    </ul>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque nostrum eligendi ab voluptate, consequuntur odio recusandae excepturi, ex laudantium dolor doloribus earum ducimus! Atque qui doloremque natus rerum tempore magnam consequatur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular places -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="travel.html" class="site-brand">
+                    Supa<span>Airs</span>
+                </a>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem ducimus veritatis nobis? Provident dolore debitis eligendi, quod beatae aut perspiciatis dicta culpa impedit!</p>
+            </div>
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places</h2>
+                <ul>
+                    <li><a href="#"></a>Boston</li>
+                    <li><a href="#"></a>South Africa</li>
+                    <li><a href="#"></a>Las Angeles</li>
+                    <li><a href="#"></a>Las Vagas</li>
+                    <li><a href="#"></a>Chicago</li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <script src="travel.js"></script>
+    <script>
+        // img model
+        const allGalleryItem = document.querySelectorAll('.gallery-item');
+        const imgModelDiv = document.getElementById('img-model-box');
+        const modelCloseBtn = document.getElementById('model-close-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        let imgIndex = 0;
+
+        allGalleryItem.forEach((galleryItem) => {
+            galleryItem.addEventListener('click', () => {
+                imgModelDiv.style.display ="block";
+                let imgSrc = galleryItem.querySelector('img').src;
+                imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                showImageContent(imgIndex);
+            })
+        });
+
+        // next click
+        nextBtn.addEventListener('click', () => {
+            imgIndex++;
+            if(imgIndex > allGalleryItem.length){
+                imgIndex = 1;
+            }
+            showImageContent(imgIndex);
+        });
+
+        // prev click
+        prevBtn.addEventListener('click', () => {
+            imgIndex--;
+            if(imgIndex <= 0){
+                imgIndex = allGalleryItem.length;
+            }
+            showImageContent(imgIndex);
+        })
+        function showImageContent(index){
+            imgModelDiv.querySelector('#img-model img').src = 'img/gallery-${index}.jpg';
+        }
+
+        modelCloseBtn.addEventListener('click', () => {
+            imgModelDiv.style.display = "none";
+        })
+    </script>
+</body>
+</html>
